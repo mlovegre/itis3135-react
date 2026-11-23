@@ -1,0 +1,48 @@
+
+function Footer() {
+  return (
+    <footer>
+      {/* Public profile and website links. */}
+      <nav aria-label="Footer profile links">
+        <a href="https://webpages.charlotte.edu/mlovegre/">CLT Web</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://mlovegre.github.io/">GitHub.io</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://github.com/mlovegre">GitHub</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://www.freecodecamp.org/mlovegre">freeCodeCamp</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://www.codecademy.com/profiles/mlovegre">Codecademy</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://www.linkedin.com/in/matthew-lovegren/">LinkedIn</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://mlovegre.github.io/itis3135/">GitHub.io Course</a>
+      </nav>
+
+      <p>
+        Site designed by{' '}
+        <a href="https://webpages.charlotte.edu/mlovegre/itis3135/lovegrendesigns.com/">
+          Lovegren Designs
+        </a>{' '}
+        ©2026
+      </p>
+
+      {/* Responsive Web Design certification. */}
+      <p>
+        Certified in{' '}
+        <a href="https://freecodecamp.org/certification/mlovegre/responsive-web-design-v9">
+          Responsive Web Design
+        </a>
+      </p>
+
+      {/* HTML and CSS validation links. */}
+      <p>
+        <a href="https://validator.w3.org/">HTML Validator</a>
+        <span aria-hidden="true"> ✦ </span>
+        <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>
+      </p>
+    </footer>
+  )
+}
+
+export default Footer

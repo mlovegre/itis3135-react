@@ -1,0 +1,62 @@
+
+/* Match the original ITIS3135 page layout. */
+
+main {
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+main h2 {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+main p {
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Preserve centered introduction elements. */
+
+main figure,
+main .introduction-name {
+    text-align: center;
+}
+
+
+/* Match original Introduction page spacing. */
+
+main ul,
+main ol {
+    line-height: 1.5;
+}
+
+main li {
+    margin-bottom: 12px;
+}
+
+main li ol {
+    margin-top: 8px;
+}
+
+main blockquote {
+    text-align: center;
+    margin: 30px auto;
+    padding: 0;
+    font-style: italic;
+}
+
+main blockquote p {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Reduce excessive space beneath page content. */
+
+main {
+    min-height: auto;
+}

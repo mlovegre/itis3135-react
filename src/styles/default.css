@@ -1,0 +1,427 @@
+
+/* =========================================
+   Matthew Lovegren - ITIS3135
+   Mellow Lizard Course Website
+   ========================================= */
+
+/* General Website Styling */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #e9eff5;
+    color: #263747;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    padding: 30px 20px;
+    background-color: #20364d;
+    color: #f0f5fa;
+    text-align: center;
+    border-bottom: 4px solid #88b8dc;
+}
+
+/* Headings */
+
+h1 {
+    margin: 0 0 20px;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+    color: #20364d;
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+}
+
+h3 {
+    color: #20364d;
+    font-family: Georgia, serif;
+}
+
+h4 {
+    color: #20364d;
+    font-family: Georgia, serif;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+nav[aria-label="Secondary navigation"] {
+    padding-top: 15px;
+    border-top: 1px solid #88b8dc;
+    font-size: 0.95rem;
+}
+
+/* Links */
+
+a,
+a:visited {
+    color: #70451d;
+    text-decoration: none;
+}
+
+header a,
+header a:visited {
+    color: #f2d6aa;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #b78338;
+    outline-offset: 3px;
+}
+
+/* Main Content */
+
+main {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 25px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 35px;
+    padding: 20px;
+    border-top: 2px solid #88b8dc;
+    text-align: center;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Introduction Page */
+
+h6 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+figure {
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote {
+    margin: 30px auto;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Lists */
+
+li {
+    margin-bottom: 12px;
+}
+
+li ul {
+    margin-top: 10px;
+}
+
+nav[aria-label="Introduction profile links"] {
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* =========================================
+   Playing Cards - Mellow Lizard Collection
+   ========================================= */
+
+/* Collection container */
+
+.lounge-collection {
+    margin: 30px auto;
+}
+
+/* Individual collectible cards */
+
+.lounge-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 240px;
+    min-height: 340px;
+    margin: 12px;
+    padding: 20px 15px 40px;
+    background-color: #9fc9ef;
+    border-radius: 10px;
+    text-align: center;
+    color: #20364d;
+}
+
+
+/* Card images */
+
+.lounge-card img {
+    display: block;
+    max-width: 180px;
+    height: auto;
+    margin: 45px auto 15px;
+}
+
+/* Card headings */
+
+.lounge-card-title {
+    margin: 10px 0;
+    color: #20364d;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+}
+
+/* Card descriptions */
+
+.lounge-card p {
+    color: #20364d;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Corner numbers */
+
+.card-corner {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Top-left number */
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+/* Bottom-right number */
+
+.bottom-right {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+}
+
+/* =========================================
+   Inventory Tables
+   ========================================= */
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-family: Arial, sans-serif;
+}
+
+main table caption {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main table th,
+main table td {
+    border: 1px solid #b78338;
+    padding: 12px;
+    text-align: left;
+}
+
+main table th {
+    background-color: #244638;
+    color: #fff8e7;
+}
+
+main table tbody tr:nth-child(even) {
+    background-color: #e8e0d2;
+    color: #303d35;
+}
+
+main table tbody tr:nth-child(odd) {
+    background-color: #f8f4ec;
+    color: #303d35;
+}
+
+/* =========================================
+   Forms
+   ========================================= */
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #88b8dc;
+}
+
+legend {
+    font-weight: bold;
+    color: #20364d;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #20364d;
+    color: #f0f5fa;
+    border: 1px solid #88b8dc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #345675;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    main table {
+        font-size: 13px;
+    }
+
+    main table th,
+    main table td {
+        padding: 6px;
+        overflow-wrap: anywhere;
+    }
+
+    .lounge-card {
+        width: auto;
+        max-width: 240px;
+        min-height: 0;
+        margin: 12px auto;
+    }
+}
+
+
+/* Yearbook cards display student introductions from the API. */
+#yearbook-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 25px auto;
+}
+
+/* Each card contains a student photograph and introduction details. */
+.yearbook-card {
+    padding: 20px;
+    border: 2px solid #b78338;
+    border-radius: 12px;
+    background-color: #f3eee4;
+    color: #303d35;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.yearbook-photo {
+    margin: 0 auto 15px;
+}
+
+.yearbook-photo img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.yearbook-photo figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.yearbook-name {
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+.yearbook-mascot {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.yearbook-quote {
+    margin: 15px 0;
+    padding: 10px;
+    font-style: italic;
+}
+
+.yearbook-academic {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.yearbook-placeholder {
+    padding: 50px 10px;
+    background-color: #e5ddce;
+    border-radius: 8px;
+}
